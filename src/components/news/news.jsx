@@ -1,8 +1,9 @@
+import { Section } from "./news.styled";
 import sprite from "../../img/olympus.svg";
 
 const News = () => {
   return (
-    <section>
+    <Section>
       <h2>In The News</h2>
       <p>
         VIEW ALL ARTICLES
@@ -53,7 +54,7 @@ const News = () => {
           </svg>
         </li>
       </ul>
-    </section>
+    </Section>
   );
 };
 
