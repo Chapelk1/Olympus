@@ -1,9 +1,11 @@
 import styled from "@emotion/styled";
 
 export const Section = styled.section`
+  
   padding: 111px 0 0 0;
 `;
 export const Container = styled.div`
+  position: relative;
   width: 1120px;
   padding: 0 15px;
   margin: 0 auto;
@@ -99,4 +101,9 @@ export const Span = styled.p`
   & > span {
     display: block;
   }
+`;
+export const ImgAbs = styled.img`
+  position: absolute;
+  top: ${(props) => props.top}px;
+  left: ${(props) => props.left}px;
 `;

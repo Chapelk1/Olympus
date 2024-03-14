@@ -9,18 +9,21 @@ import {
   Descr,
   Img,
   Span,
+  ImgAbs,
 } from "./participation.styled";
+import img3 from "../../img/IMAGE03.png";
+import img8 from "../../img/IMAGE08.png";
+import img9 from "../../img/IMAGE09.png";
 
-import img6 from "../../img/IMAGE06.png";
-import img7 from "../../img/IMAGE07.png";
 const Participation = (prop) => {
   return (
     <Section>
       <Container>
+        <ImgAbs src={img3} top={"-14"} left={"-148"} />
         <Title>How to Participate</Title>
         <Wrap>
           <Half bg={"--secondary-bg-color"} side={"l"}>
-            <Img src={img6} alt="circle with a pattern" />
+            <Img src={img8} alt="circle with a pattern" />
             <SubWrap>
               <SubTitle color={"--color-accent"}>Staking</SubTitle>
               <Descr color={"--color-accent"}>
@@ -36,7 +39,7 @@ const Participation = (prop) => {
             </SubWrap>
           </Half>
           <Half side={"r"}>
-            <Img src={img7} alt="circle with a pattern" />
+            <Img src={img9} alt="circle with a pattern" />
             <SubWrap>
               <SubTitle>Bonding</SubTitle>
               <Descr>
