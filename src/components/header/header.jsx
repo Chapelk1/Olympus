@@ -7,25 +7,25 @@ const Header = () => {
         <Nav>
           <List>
             <Item>
-              <Link href="/">STAKE</Link>
+              <Link href="./">STAKE</Link>
             </Item>
             <Item>
-              <Link href="/">BOND</Link>
+              <Link href="./">BOND</Link>
             </Item>
             <Item>
-              <Link href="/">Flex loans</Link>
+              <Link href="./">Flex loans</Link>
             </Item>
             <Item>
-              <Link href="/">Olympus Pro</Link>
+              <Link href="./">Olympus Pro</Link>
             </Item>
             <Item>
-              <Link href="/">Blog</Link>
+              <Link href="./">Blog</Link>
             </Item>
             <Item>
-              <Link href="/">Transparency</Link>
+              <Link href="./">Transparency</Link>
             </Item>
             <Item>
-              <Link href="/">GOVERNANCE</Link>
+              <Link href="./">GOVERNANCE</Link>
             </Item>
           </List>
         </Nav>

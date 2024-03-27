@@ -30,22 +30,22 @@ const Footer = () => {
         <List>
           <Item>
             <SubTitle>Products</SubTitle>
-            <Link href="/">Olympus Pro</Link>
-            <Link href="/">STAKING</Link>
-            <Link href="/">BONDS</Link>
+            <Link href="./">Olympus Pro</Link>
+            <Link href="./">STAKING</Link>
+            <Link href="./">BONDS</Link>
           </Item>
           <Item>
             <SubTitle>Learn</SubTitle>
-            <Link href="/">
+            <Link href="./">
               DOCUMENTATION
             </Link>
-            <Link href="/">BLOG</Link>
-            <Link href="/">MEDIUM</Link>
+            <Link href="./">BLOG</Link>
+            <Link href="./">MEDIUM</Link>
           </Item>
           <Item>
             <SubTitle>Contact us</SubTitle>
-            <Link href="/">JOIN OLYMPUS DISCORD</Link>
-            <Link href="/">Media inquiries</Link>
+            <Link href="./">JOIN OLYMPUS DISCORD</Link>
+            <Link href="./">Media inquiries</Link>
           </Item>
         </List>
       </Container>
