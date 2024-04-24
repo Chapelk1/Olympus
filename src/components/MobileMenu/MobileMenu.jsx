@@ -3,7 +3,7 @@ import {Menu} from './MobileMenu.styled'
 const MobileMenu = (prop) => {
     
     return (
-        <Menu>
+        <Menu isOpen={prop.isOpen}>
             {prop.children}
         </Menu>
     )

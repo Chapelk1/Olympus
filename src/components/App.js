@@ -8,12 +8,12 @@ import Footer from "./footer/footer";
 function App() {
   return (
     <>
-        <Header />
-        <Hero />
-        <Participation />
-        <News />
-        <Faq />
-        <Footer />
+      <Header />
+      <Hero />
+      <Participation />
+      <News />
+      <Faq />
+      <Footer />
     </>
   );
 }
