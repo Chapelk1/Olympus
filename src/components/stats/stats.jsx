@@ -11,12 +11,17 @@ import {
 } from "./stats.styled";
 import cone from "../../img/IMAGE01.png";
 import square from "../../img/IMAGE02.png";
-const Stats = () => {
+const Stats = ({ render }) => {
   return (
     <Stat>
       <Line />
-      <Img src={cone} top={"199"} left={"-115"} />
-      <Img src={square} top={"393"} left={"905"} />
+      {render && (
+        <>
+          <Img src={cone} top={"199"} left={"-115"} />
+          <Img src={square} top={"393"} left={"905"} />
+        </>
+      )}
+
       <Title>Protocol Stats</Title>
       <Wrap>
         <SubWrap>

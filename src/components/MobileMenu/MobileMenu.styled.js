@@ -18,4 +18,5 @@ export const Menu = styled.div`
   }};
   display: flex;
   flex-direction: column;
+  z-index: 99;
 `;

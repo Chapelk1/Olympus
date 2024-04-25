@@ -3,7 +3,7 @@ import Stats from "../stats/stats";
 
 
 
-const Hero = () => {
+const Hero = ({ render }) => {
   return (
     <Section>
       <Container>
@@ -14,7 +14,7 @@ const Hero = () => {
           liquid and used widely across Web3.
         </Descr>
         <Btn>Discover How</Btn>
-        <Stats />
+        <Stats render={render} />
       </Container>
     </Section>
   );

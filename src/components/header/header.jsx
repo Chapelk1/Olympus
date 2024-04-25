@@ -15,20 +15,15 @@ import sprite from '../../img/olympus.svg';
 import MobileMenu from '../MobileMenu/MobileMenu'
 import { useState } from "react";
 
-const Header = () => {
-  const [viewWidth, setViewWidth] = useState(window.innerWidth);
+const Header = ({ render }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const render = viewWidth >= 768 ? true : false;
+  
 
   const toggleOpenMenu = () => {
     setMenuIsOpen(!menuIsOpen);
-  }
-  const resizeWidthWindow = () => {
-    setViewWidth(window.innerWidth);
-  }
-  window.addEventListener("resize", resizeWidthWindow); 
-
-
+  };
+  
+  
 
   return (
     <Head>

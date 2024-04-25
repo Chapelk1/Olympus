@@ -24,6 +24,8 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+
 ul,
 ol,
 p,
@@ -50,10 +52,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-.icon-2 {
-  align-self: end;
-  margin-top: 20px;
-}
 
 
 @media screen and (min-width: 320px) {
@@ -61,7 +59,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  
+  .icon-2 {
+  align-self: end;
+  margin-top: 20px;
+}
 }
 
 @media screen and (min-width:1024px) {
@@ -69,5 +70,5 @@ img {
 }
 
 @media screen and (min-width:1440px) {
-  width: 100;
+  
 }

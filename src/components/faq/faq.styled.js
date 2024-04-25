@@ -5,6 +5,9 @@ export const Section = styled.section`
 `;
 export const Container = styled.div`
   @media screen and (min-width: 320px) {
+    width: 320px;
+    padding: 0 10px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -24,6 +27,11 @@ export const Container = styled.div`
 `;
 export const Title = styled.h2`
   @media screen and (min-width: 320px) {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 1.21;
+    color: var(--primary-color);
   }
 
   @media screen and (min-width: 768px) {
@@ -33,11 +41,6 @@ export const Title = styled.h2`
   }
 
   @media screen and (min-width: 1440px) {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 1.21;
-    color: var(--primary-color);
   }
 `;
 export const List = styled.ul`
@@ -55,47 +58,8 @@ export const List = styled.ul`
   }
 `;
 
-export const TitleItem = styled.h3`
-  @media screen and (min-width: 320px) {
-  }
 
-  @media screen and (min-width: 768px) {
-  }
 
-  @media screen and (min-width: 1024px) {
-  }
-
-  @media screen and (min-width: 1440px) {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 1.26;
-    color: var(--text-color-secondary);
-  }
-`;
-export const Descr = styled.p`
-  @media screen and (min-width: 320px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1024px) {
-  }
-
-  @media screen and (min-width: 1440px) {
-    position: absolute;
-    top: 160px;
-    left: 45px;
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.43;
-    letter-spacing: 0.02em;
-    color: var(--primary-color);
-    max-width: 500px;
-  }
-`;
 
 export const Img = styled.img`
   @media screen and (min-width: 320px) {

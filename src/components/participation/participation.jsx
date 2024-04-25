@@ -15,11 +15,12 @@ import img3 from "../../img/IMAGE03.png";
 import img8 from "../../img/IMAGE08.png";
 import img9 from "../../img/IMAGE09.png";
 
-const Participation = (prop) => {
+const Participation = ({render}) => {
   return (
     <Section>
       <Container>
-        <ImgAbs src={img3} top={"-14"} left={"-148"} />
+        {render && <ImgAbs src={img3} top={"-14"} left={"-148"} />}
+
         <Title>How to Participate</Title>
         <Wrap>
           <Half bg={"--secondary-bg-color"} side={"l"}>

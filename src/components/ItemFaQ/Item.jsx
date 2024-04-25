@@ -1,14 +1,13 @@
 import { useState } from "react";
-import { Card, Icon, Btn,} from "./Item.styled";
+import { Card, Icon, Btn, TitleItem, Descr } from "./Item.styled";
 import sprite from "../../img/olympus.svg";
 
-const Item = (prop) => {
+const Item = ({title, descr}) => {
     const [isOpen, setIsOpen] = useState(false)
 
     const cardToggleOpen = () => {
         setIsOpen((prevState) => !prevState);
     }
-
     return (
       <Card isOpen={isOpen}>
         <Btn isOpen={isOpen} onClick={cardToggleOpen}>
@@ -16,7 +15,8 @@ const Item = (prop) => {
             <use href={sprite + "#icon-plus"}></use>
           </Icon>
         </Btn>
-        {prop.children}
+        <TitleItem>{title}</TitleItem>
+        <Descr isOpen={isOpen}>{descr}</Descr>
       </Card>
     );
 }
