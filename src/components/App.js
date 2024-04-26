@@ -7,7 +7,8 @@ import Footer from "./footer/footer";
 import { useState } from "react";
 function App() {
   const [viewWidth, setViewWidth] = useState(window.innerWidth);
-  const render = viewWidth >= 768 ? true : false;
+  const render = viewWidth >= 768  ? true : false;
+ 
   const resizeWidthWindow = () => {
     setViewWidth(window.innerWidth);
   };

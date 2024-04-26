@@ -6,22 +6,22 @@ import {
   Item,
   SubTitle,
   Descr,
-  Line,
-  Img,
+  ImgCone,
+  ImgSquare,
 } from "./stats.styled";
 import cone from "../../img/IMAGE01.png";
 import square from "../../img/IMAGE02.png";
 const Stats = ({ render }) => {
   return (
     <Stat>
-      <Line />
+      
+
       {render && (
         <>
-          <Img src={cone} top={"199"} left={"-115"} />
-          <Img src={square} top={"393"} left={"905"} />
+          <ImgCone src={cone}/>
+          <ImgSquare src={square} />
         </>
       )}
-
       <Title>Protocol Stats</Title>
       <Wrap>
         <SubWrap>

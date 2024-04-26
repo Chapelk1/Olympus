@@ -17,13 +17,10 @@ import { useState } from "react";
 
 const Header = ({ render }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  
 
   const toggleOpenMenu = () => {
     setMenuIsOpen(!menuIsOpen);
   };
-  
-  
 
   return (
     <Head>

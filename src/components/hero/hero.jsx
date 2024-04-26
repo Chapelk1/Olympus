@@ -1,4 +1,4 @@
-import { Section, Container, Title, Descr, Btn } from "./hero.styled";
+import { Section, Container, Title, Descr, Btn, Line } from "./hero.styled";
 import Stats from "../stats/stats";
 
 
@@ -14,8 +14,10 @@ const Hero = ({ render }) => {
           liquid and used widely across Web3.
         </Descr>
         <Btn>Discover How</Btn>
+
         <Stats render={render} />
       </Container>
+      <Line />
     </Section>
   );
 };

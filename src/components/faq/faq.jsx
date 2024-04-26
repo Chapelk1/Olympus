@@ -3,21 +3,21 @@ import {
   Container,
   Title,
   List,
-  
-  Img,
+  ImgRing,
+  ImgCircle,
 } from "./faq.styled";
 import Item from "../ItemFaQ/Item";
-import img6 from "../../img/IMAGE06.png";
-import img7 from "../../img/IMAGE07.png";
+import ring from "../../img/IMAGE06.png";
+import circle from "../../img/IMAGE07.png";
 import faQ from '../../data/FaQ.json'
-const Faq = ({render}) => {
+const Faq = ({ render }) => {
   return (
     <Section>
       <Container>
         {render && (
           <>
-            <Img src={img6} top={"316"} left={"-244"} />
-            <Img src={img7} top={"610"} left={"1012"} />
+            <ImgRing src={ring} />
+            <ImgCircle src={circle} />
           </>
         )}
 

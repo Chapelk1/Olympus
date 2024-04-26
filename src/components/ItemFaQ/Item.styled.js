@@ -13,15 +13,7 @@ export const Card = styled.li`
       return "130px";
     }
   }};
-  @media screen and (min-width: 320px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1024px) {
-  }
-
+  
   @media screen and (min-width: 1440px) {
     padding: 75px 56px 20px 45px;
     height: ${(prop) => {
@@ -34,21 +26,13 @@ export const Card = styled.li`
   }
 `;
 export const TitleItem = styled.h3`
-  @media screen and (min-width: 320px) {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.26;
-    color: var(--text-color-secondary);
-    margin-bottom: 40px;
-    max-width: 200px;
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1024px) {
-  }
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.26;
+  color: var(--text-color-secondary);
+  margin-bottom: 40px;
+  max-width: 200px;
 
   @media screen and (min-width: 1440px) {
     font-size: 32px;
@@ -56,32 +40,21 @@ export const TitleItem = styled.h3`
   }
 `;
 export const Descr = styled.p`
-  @media screen and (min-width: 320px) {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.43;
-    letter-spacing: 0.02em;
-    color: var(--primary-color);
-    max-width: 500px;
-    transition: transform 250ms linear;
-    transform: ${prop => {
-      if (prop.isOpen === true) {
-      return 'translateY(0%)'
-      } else {
-        return "translateY(200%)";
-      }
-    }};
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1024px) {
-  }
-
-  @media screen and (min-width: 1440px) {
-  }
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.43;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+  max-width: 500px;
+  transition: transform 250ms linear;
+  transform: ${(prop) => {
+    if (prop.isOpen === true) {
+      return "translateY(0%)";
+    } else {
+      return "translateY(200%)";
+    }
+  }};
 `;
 export const Icon = styled.svg`
   fill: inherit;
@@ -106,15 +79,7 @@ export const Btn = styled.button`
     return "rotate(0deg)";
   }};
 
-  @media screen and (min-width: 320px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1024px) {
-  }
-
+  
   @media screen and (min-width: 1440px) {
     top: 30px;
     right: 55px;

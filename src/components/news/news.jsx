@@ -11,22 +11,22 @@ import {
   Descr,
   Btn,
   Icon,
-  Img,
+  ImgCircle,
+  ImgSquare,
 } from "./news.styled";
 import sprite from "../../img/olympus.svg";
 import circle from "../../img/IMAGE04.png";
 import square from "../../img/IMAGE05.png";
-const News = ({render}) => {
+const News = ({ render }) => {
   return (
     <Section>
       <Container>
         {render && (
           <>
-            <Img src={circle} top={"122"} left={"1011"} />
-            <Img src={square} top={"412"} left={"-172"} />
+            <ImgCircle src={circle} />
+            <ImgSquare src={square} />
           </>
         )}
-
         <div>
           <Title>In The News</Title>
           <Accent>
